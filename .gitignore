@@ -3,8 +3,8 @@ __pycache__/
 *.py[codz]
 *$py.class
 
-# C extensions
-*.so
+# But keep frontend lib files
+!frontend/src/lib/
 
 # Distribution / packaging
 .Python
@@ -36,18 +36,13 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py.cover
-.hypothesis/
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
 .pytest_cache/
 cover/
 
@@ -216,3 +211,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
