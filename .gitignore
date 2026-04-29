@@ -3,9 +3,6 @@ __pycache__/
 *.py[codz]
 *$py.class
 
-# But keep frontend lib files
-!frontend/src/lib/
-
 # Distribution / packaging
 .Python
 build/
@@ -25,6 +22,9 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# But keep frontend lib files (must be AFTER lib/ rule)
+!frontend/src/lib/
 
 # PyInstaller
 #   Usually these files are written by a python script from a template
